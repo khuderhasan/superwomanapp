@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "844164791815",
+    "project_id": "superwoman-6dfa6",
+    "storage_bucket": "superwoman-6dfa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844164791815:android:f72b70fb5a3251b13734a2",
+        "android_client_info": {
+          "package_name": "com.example.super_woman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXX9qNkpAvILxVU3CV_x2b-O-lF5gPj98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
