@@ -40,6 +40,8 @@ String? accountTypeValidator(String? value) {
   return null;
 }
 
+final emailValidator1 = RegExp(r'^\w+@\w+\.\w+$');
+
 String getMonth(int month) {
   switch (month) {
     case 1:

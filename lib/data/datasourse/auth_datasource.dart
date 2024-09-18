@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:super_woman/config/auth_exception.dart';
+import 'dart:io';
 
 import '../../config/error_model.dart';
 import '../../config/result_class.dart';
@@ -69,6 +71,12 @@ class AuthDataSource {
       return ResponseState.error(ErrorModel(code: e.code, message: e.message!));
     } on AuthException catch (e) {
       return ResponseState.error(ErrorModel(code: e.code, message: e.message));
+    } on SocketException catch (e) {
+      if (kDebugMode) {
+        print(e);
+      }
+      return ResponseState.error(
+          ErrorModel(code: '', message: 'Internet connection error!'));
     }
   }
 

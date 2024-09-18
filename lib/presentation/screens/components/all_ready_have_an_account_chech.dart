@@ -21,7 +21,7 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
           style: const TextStyle(
               color: headLines1Color,
               fontWeight: FontWeight.bold,
-              fontSize: 17),
+              fontSize: 15),
         ),
         GestureDetector(
           onTap: press as void Function()?,
@@ -30,7 +30,7 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
             style: const TextStyle(
                 color: headLines2Color,
                 fontWeight: FontWeight.bold,
-                fontSize: 19),
+                fontSize: 17),
           ),
         ),
       ],
